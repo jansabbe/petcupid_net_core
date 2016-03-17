@@ -19,3 +19,5 @@ PetCupid using .Net Core and Typescript
 * After install, make sure `/usr/local/share/dotnet/bin` is in your PATH
 * Need latest openssl installed (`brew update` && `brew install openssl`)
 * Ensure homebrew has been installed in the default location!
+
+* The latest dotnet core RC version apparently does not work with the latest asp.net RC. Documentation not really up to date.

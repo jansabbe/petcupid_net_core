@@ -5,7 +5,15 @@
     },
 
     "dependencies": {
-        "NETStandard.Library": "1.0.0-rc2-23811"
+        "NETStandard.Library": "1.0.0-rc2-23811",
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+        "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+        "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+        "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+        "Microsoft.CodeAnalysis.Common": "1.2.0-rc",
+        "Microsoft.CodeAnalysis.CSharp": "1.2.0-rc"
+
     },
 
     "frameworks": {
