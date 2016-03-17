@@ -5,9 +5,9 @@ PetCupid using .Net Core and Typescript
 
 # Goals
 
-I want to learn more about the new open-source stack from Microsoft, and check if I can develop without Windows in practice.
-I want to compare working with ReactJS instead of AngularJS
-I want a typesafe UI by using TypeScript
+* I want to learn more about the new open-source stack from Microsoft, and check if I can develop without Windows in practice.
+* I want to compare working with ReactJS instead of AngularJS
+* I want a typesafe UI by using TypeScript
 
 # Documentation/Links
 
