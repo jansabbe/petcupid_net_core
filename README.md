@@ -12,3 +12,10 @@ PetCupid using .Net Core and Typescript
 # Documentation/Links
 
 [.Net Core](https://dotnet.github.io/)
+[Visual Studio Code](https://code.visualstudio.com)
+
+# Random notes while installing/setting up project
+
+* After install, make sure `/usr/local/share/dotnet/bin` is in your PATH
+* Need latest openssl installed (`brew update` && `brew install openssl`)
+* Ensure homebrew has been installed in the default location!
