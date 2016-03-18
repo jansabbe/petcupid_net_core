@@ -35,7 +35,7 @@ namespace PetCupid
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            loggerFactory.
+            
             app.UseIISPlatformHandler();
 
             app.UseStaticFiles();
