@@ -1,0 +1,23 @@
+{
+  "name": "petcupid",
+  "version": "1.0.0",
+  "description": "PetCupid in .NET Core with Typescript and React",
+  "main": "app.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^0.8.1",
+    "tsd": "^0.6.5",
+    "typescript": "^1.8.9",
+    "typescript-loader": "^1.1.3",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}

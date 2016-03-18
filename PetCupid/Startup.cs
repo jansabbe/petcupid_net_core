@@ -2,6 +2,7 @@ using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Webpack;
 
 namespace PetCupid
 {
@@ -11,14 +12,20 @@ namespace PetCupid
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddWebpack();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddDebug();
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseMvc();
+            //if (env.IsDevelopment()) {
+                loggerFactory.AddConsole();
+                app.UseDeveloperExceptionPage();
+                app.UseWebpack("webpack.config.js", "appBundle.js");    
+            //}
+            
         }
 
         // Entry point for the application.

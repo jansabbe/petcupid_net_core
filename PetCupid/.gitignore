@@ -234,3 +234,5 @@ _Pvt_Extensions
 .fake/
 
 .DS_Store
+wwwroot/appBundle.js
+webpack/webpack.dev.js

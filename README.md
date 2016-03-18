@@ -28,3 +28,13 @@ PetCupid using .Net Core and Typescript
 * To get watcher running `dnu commands install Microsoft.Dnx.Watcher`
 * Did not work.
 	Alternatively http://johnpapa.net/automatically-restarting-asp-net-on-osx-with-dnxmon/
+
+
+# Webpack
+
+* [ASP.NET + Webpack](http://xabikos.com/javascript%20module%20bundler/javascript%20dependencies%20management/css%20module%20bundler/css%20dependencies%20management/2015/12/15/asp.net-5-and-webpack-part-1.html)
+* [Boilerplate example](https://github.com/xabikos/aspnet5-react-webpack-boilerplate)
+
+# Typescript
+
+* `npm install -g tsd`
