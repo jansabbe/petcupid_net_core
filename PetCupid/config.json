@@ -1,0 +1,5 @@
+{
+    "Production": {
+        "PetsDatabase": "Data Source=C:\\PetsDatabase\\pets.sqlite"
+    }
+}
