@@ -8,9 +8,10 @@ using PetCupid.Database;
 namespace PetCupid.Migrations
 {
     [DbContext(typeof(PetsDbContext))]
-    partial class PetsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160318132856_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348");

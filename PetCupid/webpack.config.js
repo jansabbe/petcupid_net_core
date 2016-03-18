@@ -1,6 +1,6 @@
 module.exports = {
     context: __dirname + "/app",
-    entry: "./app.ts",
+    entry: "./app.tsx",
     output: {
         path: __dirname + "/wwwroot",
         filename: "appBundle.js"

@@ -15,7 +15,7 @@ namespace PetCupid
     public class Startup
     {
         public IConfigurationRoot Configuration { get; set; }
-        
+
         public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
         {
             var builder = new ConfigurationBuilder()
@@ -23,17 +23,18 @@ namespace PetCupid
                 .AddJsonFile("config.json");
             Configuration = builder.Build();
         }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = Configuration["Production:PetsDatabase"];
- 
+
             services.AddEntityFramework()
                 .AddSqlite()
                 .AddDbContext<PetsDbContext>(options => options.UseSqlite(connection));
-            
+
             services.AddMvc();
             services.AddWebpack();
+            services.AddSwaggerGen();
             services.AddTransient<Pets>();
         }
 
@@ -43,15 +44,21 @@ namespace PetCupid
             app.UseStaticFiles();
             app.UseMvc();
             //if (env.IsDevelopment()) {
-                loggerFactory.AddConsole();
-                app.UseDeveloperExceptionPage();
-                app.UseWebpack("webpack.config.js", "appBundle.js");    
-            //}
+            loggerFactory.AddConsole();
             
+            app.UseSwaggerGen();
+            app.UseSwaggerUi();
+            
+            app.UseWebpack("webpack.config.js", "appBundle.js");
+            
+                    
+            //}
+
         }
 
         // Entry point for the application.
-        public static void Main(string[] args) {
+        public static void Main(string[] args)
+        {
             WebApplication.Run<Startup>(args);
         }
     }
