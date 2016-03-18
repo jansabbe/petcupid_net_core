@@ -21,3 +21,5 @@ PetCupid using .Net Core and Typescript
 * Ensure homebrew has been installed in the default location!
 
 * The latest dotnet core RC version apparently does not work with the latest asp.net RC. Documentation not really up to date.
+
+* Other install instructions: [ASP.NET](https://docs.asp.net/en/latest/getting-started/installing-on-mac.html). Still uses dnx/dnvm commands instead of dotnet cli.
