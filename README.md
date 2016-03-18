@@ -25,3 +25,6 @@ PetCupid using .Net Core and Typescript
 * Other install instructions: [ASP.NET](https://docs.asp.net/en/latest/getting-started/installing-on-mac.html). Still uses dnx/dnvm commands instead of dotnet cli.
 
 * To get autocompletion working, make sure you ran `dnvm upgrade -r mono`. 
+* To get watcher running `dnu commands install Microsoft.Dnx.Watcher`
+* Did not work.
+	Alternatively http://johnpapa.net/automatically-restarting-asp-net-on-osx-with-dnxmon/
